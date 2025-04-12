@@ -6,8 +6,124 @@
     <title>Mi pagina Web</title>
 </head>
 <body><!--elemento html que corresponde al contenido visual de mi pagina web todo lo que el usaurio visualiza en pantalla ej texto iamgenes tablas columasn filas et-->
-    <h1>Mi primera pagina web</h1>
-    <h3>Carrera de Computacion</h3>
-    <h6>Jhon Enriquez</h6>
+   
+    <header>
+        <h1>Universidad Central del Ecuador</h1>
+        <h3>Carrera de Computacion</h3>
+    </header>
+
+    <nav></nav>
+
+    <section>
+        <!--CABECERAS DE SECCIONES-->
+        <h1>Mi primera pagina web</h1>
+        <h3>Carrera de Computacion</h3>
+
+        <!--elementos para Parrafos-->
+        <p>Este es el primer parrafo de mi pagina web</p>
+        <span>Parrafos mas cortos</span>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Aliquam doloremque iure repellendus, nam sint ratione debitis. 
+            Ut eligendi iure aspernatur!</p> <!--p es tilizado para parrafos grandes-->
+        <!--Textos-->
+        <strong>texto de importancia que quiero resaltar</strong>
+        <br>
+        <br>
+        <b>Textos que no quiero darle relevancia</b>
+        <em>Textos en Cursiva con Importancia</em>
+        <i>Textos en Cursiva sin Importancia</i>
+        <u>Texto subrayado</u>
+        <s>Texto eliminado</s>
+        <mark>Texto resaltado</mark>
+        <br>
+        <hr>
+
+        <!--Listas-->
+        <ul>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Ventas</li>
+        </ul><!--no interesa e orden-->
+
+
+        <ol>
+            <li>Ventas</li>
+            <li>Compras</li>
+            <li>Ventas</li>
+        </ol> <!-- si le interesa el orden de los items y pone un numero-->
+    
+
+        <!--TABLAS-->
+        <table border="1"><!--siempre se define la fila/ el tr siempre es primero y representa la fila-->
+            <thead>
+                <tr>
+                    <!--Como contido de la fila declaro todas las columnas y las declaro mediante el elemnto th-->
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>CI</th>
+                    <th>Genero</th>
+                    <th>Accion</th>
+                </tr>
+            </thead>
+
+            <tbody><!--aqui va td y NO TH por buena norma/ por cada fila es cada elemento html TR-->
+                <tr>
+                    <td>1</td>
+                    <td>Jhon</td>
+                    <td>Enriquez</td>
+                    <td>0401213053</td>
+                    <td>Masculino</td>
+                    <td><Button>Editar</Button></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Daniela</td>
+                    <td>Arevalo</td>
+                    <td>040121222</td>
+                    <td>Femenino</td>
+                    <td><Button>Editar</Button></td>
+            </tbody>
+        </table>
+
+
+        <!--Contenedores (ELEMENTOS QUE AGRUPAN CONTENIDO)-->
+        <div>
+            <!--son contenedores/agrupadores header, nav, section ...etc-->
+        </div>
+
+        <!--Formulario-->
+        <form action="">
+            <label for="id_nombre">Nombre</label>
+            <input type="text" id="id_nombre">
+            <label for="id_password">Password</label>
+            <input type="password" id="id_password">
+            <label for="id_fecha"Fecha de Nacimiento></label>
+            <input type="date" id="id_fecha">
+            <label for="id_edad">Edad</label>
+            <input type="number" id="id_edad">
+            <button>Guardar</button>
+        </form>
+
+        <!--MULTIMEDIA-->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png" alt="Logo UCE" width="30px" height="40px">
+
+        <video controls>
+            <source src="https://www.youtube.com/watch?v=2Vv-BfVoq4g" type="video/mp4">
+        </video>
+        <h6>Jhon Enriquez</h6>
+        <button> Aceptar</button>
+    </section>
+
+    <aside></aside>
+
+    <footer>
+        <h3>Todos los derechos reservados</h3>
+    </footer>
+   
+   
 </body>
+
+
+
 </html>
