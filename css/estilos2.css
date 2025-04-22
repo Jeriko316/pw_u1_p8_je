@@ -1,0 +1,63 @@
+/*1.- UNIVERSAL -- aplica a todos los elementos html*/
+* {
+   color:blue;
+   text-align: center; /*centra el texto*/
+   font-family: 'Courier New', Courier, monospace;
+}
+
+/*2.- Por tipo de elemento HTML*/
+h4 {
+   background: red;
+   font-size: 40px;
+}
+
+h5 {
+   background: green;
+   font-size: 10px;
+}
+
+/*3-. Por clase*/
+.grupo1 {
+    background-color: yellow;
+    border: solid black 3px;
+}
+
+/*4.- Por identificador*/
+#id_boton1 {
+    padding-top: 20px;
+    padding-left:30px ;
+    padding-bottom: 20px;
+    padding-right: 30px;
+    border: solid red 5px;
+}
+
+/*5.-Por atributo- todos los elementos que tengan el atributo id*  - cobimnado : button[id]*/
+button[id] {
+    font-size: 50px;
+    border: solid yellow 10px;
+    border-radius: 20px;
+
+}
+
+img[alt = "texto1"] {
+    width: 40px;
+    height: 50px;
+}
+
+img[src*= ".png"] { /*el valor del atributo src que en algun punto contenga png*/
+    width: 40px;
+    height: 50px;
+}
+
+/*6.- Por pseudo-clases(orientado a eventos)*/
+/*aqui se aplica a todos los elementos que tengan el atributo id y que sean hijos 
+de un elemento con la clase grupo1*/
+i:hover {
+    color: darkblue;
+    font-size: 70px;
+}
+
+input:focus {  /*nombre del evento: el evento */
+    border-color: blueviolet;
+    background: red;
+}
