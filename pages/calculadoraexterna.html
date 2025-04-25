@@ -12,15 +12,20 @@
     </header>
     <nav></nav>
     <section>
+        <div id="id_espacio">Agregado</div>
         <label id="id_label_1" for="id_numero_1">Numero 1</label>
         <input id="id_numero_1" type="number">
-        <label for="id_label_2" for="id_numero_2">Numero</label>
-        <input type="id_numero_2" type="number">
-        <button onclick="document.getElementById('id_label_1').style.background='blue'">Cambiar Color</button>
-        <button onclick="document.getElementById('id_label_2').innerText='Numero 2'">Cambiar Texto</button>
-        <button onclick="document.getElementById('id_label_1').style.fontSize='40px'">Cambiar Tamaño</button>
-        <button onclick="document.getElementById('id_concatenar').innerText=document.getElementById('id_label_1').innerText + document.getElementById('id_label_2').innerText">Concatenar</button>
-        <label id="id_concatenar" for=""></label>
+        <label id="id_label_2" for="id_numero_2">Numero2</label>
+        <input id="id_numero_2" type="number">
+        <p id="id_resultado">Resultado: </p>
+        <button onclick="evaluarOperacion('+')">Sumar</button>
+        <button onclick="evaluarOperacion('-')">Restar</button>
+        <button onclick="evaluarOperacion('*')">Multiplicar</button>
+        <button onclick="evaluarOperacion('/')">Dividir</button>
+
+        <button onclick="fundamentos()">Fundamentos de JS</button>
+
+        
     </section>
     <aside></aside>
     <footer></footer>
