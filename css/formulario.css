@@ -1,0 +1,68 @@
+.container {
+    display: flex;  /*simepre es fijo */
+    /*flex-direction: column;*/  /*permite ,amejar para mover de manera derecha o izquierda*/
+    justify-content: center; /*VARIABLE DEPDENDE DE LO QUE SE NECESITE justificacion de contenido puede se centro */
+    align-items: center; /*TAMBIEN ES DIJO JUSTIFICACION VERTICAL*/
+}
+
+body {
+    background: #59abe3;
+}
+
+p:before { /*se debe activar con estilo para visualizar el texto*/
+    content: attr(type); /*activar en el atributo type*/
+    display: block; /*visualizar como un bloque*/
+    margin: 3px;
+    font-size: 18px;
+    color: #741515;
+}
+
+input {
+    width: 270px;
+    border: none;
+    border-bottom: 2px solid #cfd2be;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 3px solid #8f76c9;
+}
+
+h2, 
+header {
+    margin: 10px 2px;
+    width: 180px;
+    color: #78788c;
+    border-bottom: 3px solid #075b93;
+}
+
+header {
+    font-size: 35px;
+    width: 260px;
+
+}
+
+.formulario {
+    border-radius: 10px;
+    background: #e6e6e6;
+    padding: 30px 25px;
+    box-shadow: 10px 5px #397196;
+}
+
+button {
+    background: #a7cae1;
+    padding: 20px 20px;
+    font-size: 20px;
+    color: #06558a;
+    border-radius: 10px;
+    margin-top: 20px;
+
+}
+
+.centra-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
